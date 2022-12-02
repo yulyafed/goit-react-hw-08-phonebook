@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { Button, Input, Label, FormPhone } from './PhonebookForm.styled';
-import * as operations from 'redux/operations';
+import * as operations from 'redux/contacts/operations';
 
 export const PhonebookForm = () => {
 

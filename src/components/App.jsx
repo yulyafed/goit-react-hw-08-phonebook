@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
-import * as selectors from 'redux/selectors';
-import * as operations from 'redux/operations';
+import * as selectors from 'redux/contacts/selectors';
+import * as operations from 'redux/contacts/operations';
 import { useEffect } from 'react';
 import { PhonebookForm } from './PhonebookForm/PhonebookForm';
 import { ContactsFilter } from './ContactsFilter/ContactsFilter';

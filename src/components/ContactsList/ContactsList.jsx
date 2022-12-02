@@ -1,8 +1,8 @@
 import { useDispatch, useSelector } from 'react-redux';
 // import { useEffect } from 'react';
 import { List, Item, Text, Button } from './ContactsList.styled';
-import * as selectors from 'redux/selectors';
-import * as operations from 'redux/operations';
+import * as selectors from 'redux/contacts/selectors';
+import * as operations from 'redux/contacts/operations';
 
 export const ContactsList = () => {
   
