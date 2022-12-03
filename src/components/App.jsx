@@ -14,12 +14,14 @@ const LoginPage = lazy(() => import('../pages/Login'));
 const ContactsPage = lazy(() => import('../pages/Contacts'));
 
 export const App = () => {
+  
   const dispatch = useDispatch();
+
   const { isRefreshing } = useAuth();
 
-    const { isLoading, error } = useSelector(selectors.getContacts);
+  const { isLoading, error } = useSelector(selectors.getContacts);
 
-    useEffect(() => dispatch(operations.fetchContacts()), [dispatch]);
+  useEffect(() => dispatch(operations.fetchContacts()), [dispatch]);
 
   useEffect(() => {
     dispatch(refreshUser());

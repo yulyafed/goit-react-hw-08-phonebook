@@ -1,9 +1,14 @@
-// .wrapper {
-//     display: flex;
-//     align - items: center;
-//     gap: 12px;
-// }
+import styled from 'styled-components';
 
-// .username {
-//     font - weight: 700;
-// }
+export const Wrapper = styled.div`
+display: flex;
+flex-direction: column;
+gap:16px;
+border: 1px solid black;
+width:40%;
+margin-left: 15px;
+`;
+
+export const Useremail = styled.p`
+font - weight: 700;
+`;
