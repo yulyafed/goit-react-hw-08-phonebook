@@ -14,7 +14,7 @@ export const PhonebookForm = () => {
     dispatch(
       operations.addContact({
         name: form.elements.name.value,
-        phone: form.elements.number.value,
+        number: form.elements.number.value,
       })
     );
 

@@ -1,7 +1,6 @@
 import { useEffect, lazy } from 'react';
 import { useDispatch} from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
-import * as operations from 'redux/contacts/operations';
 import { Layout } from './Layout';
 import { PrivateRoute } from './PrivateRoute';
 import { RestrictedRoute } from './RestrictedRoute';
@@ -17,9 +16,7 @@ export const App = () => {
   const dispatch = useDispatch();
 
   const { isRefreshing } = useAuth();
-
-   useEffect(() => dispatch(operations.fetchContacts()), [dispatch]);
-
+ 
   useEffect(() => {
     dispatch(refreshUser());
   }, [dispatch]);

@@ -6,12 +6,9 @@ export const Navigation = () => {
 
   return (
     <nav>
-      <FormLink to="/">
-        Home
-      </FormLink>
-      {isLoggedIn && (
-        <FormLink to="/tasks">
-          Tasks
+        {isLoggedIn && (
+        <FormLink to="/contacts">
+          Contacts
         </FormLink>
       )}
     </nav>
