@@ -1,18 +1,9 @@
 import { Helmet } from 'react-helmet';
 import { LoginForm } from 'components/LoginForm/LoginForm';
 
-const styles = {
-    container: {
-        minHeight: 'calc(100vh - 50px)',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-    }
-};
-
 export default function Login() {
     return (
-        <div style={styles.container}>
+        <div >
             <Helmet>
                 <title>Login</title>
             </Helmet>

@@ -6,11 +6,10 @@ export const Navigation = () => {
 
   return (
     <nav>
-        {isLoggedIn && (
-        <FormLink to="/contacts">
-          Contacts
-        </FormLink>
-      )}
+      <FormLink  to="/">
+        Home
+      </FormLink>
+      {isLoggedIn && <FormLink to="/contacts">Contacts</FormLink>}
     </nav>
   );
 };

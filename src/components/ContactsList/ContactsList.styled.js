@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const List = styled.ul`
 display: flex;
 flex-direction: column;
-margin-left:15px;
 list-style: disc;
 `;
 

@@ -7,6 +7,7 @@ gap:16px;
 border: 1px solid black;
 width:40%;
 margin-left: 15px;
+margin-bottom: 15px;
 `;
 
 export const Input = styled.input`
